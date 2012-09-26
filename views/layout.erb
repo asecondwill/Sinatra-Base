@@ -1,0 +1,31 @@
+<!doctype html>  
+<html lang="en">  
+<head>  
+  <meta charset="utf8">  
+  <title><%= "#{@title} | #{SITE_TITLE}" %></title>
+   
+  <link href="/stylesheets/css/style.css" rel="stylesheet">  
+</head>  
+<body>  
+  <div class='wrapper'> 
+    <header>  
+      <hgroup>  
+        <h1>Welcome To your Campaign</h1>          
+      </hgroup>  
+    </header>  
+    <div id="main">  
+      <% if flash[:notice] %>
+      <p class="success"><%= flash[:notice] %></p>
+    <% end %>
+
+    <% if flash[:error] %>
+      <p class="error"><%= flash[:error] %></p>
+    <% end %>
+      <%= yield %>  
+    </div>  
+    <footer>  
+      <p><small>Just anouther happy kindleman production.</small></p>  
+    </footer>  
+  </div>  
+</body>  
+</html>  

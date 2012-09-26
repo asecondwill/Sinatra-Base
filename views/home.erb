@@ -1,0 +1,27 @@
+
+<%= @values %>
+<%= @person.email %>
+<p class='error'><%= @error %></p>
+
+
+
+<form action="/" method="post">
+    <p>
+      <label for="first_name">First Name</label>
+      <input name='first_name' value = "<%= @person.first_name %>">
+      <%= field_validation(@person, :first_name) %>
+    </p>
+    
+    <p>      
+      <label for="last_name">Last Name</label>
+      <input name='last_name' value = "<%= @person.last_name %>">
+        <%= field_validation(@person, :last_name) %>
+     </p> 
+    
+    <p>
+    <label for="email">Email</label>
+    <input name='email' type = "text" value = "<%= @person.email %>">
+      <%= field_validation(@person, :email) %>
+    </p>
+    <input type="submit" value="Take Note!">
+</form>

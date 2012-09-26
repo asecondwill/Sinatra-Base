@@ -1,0 +1,13 @@
+body{
+
+  background-color: #fefefe;
+}
+
+
+.success{
+  background-color: green;
+}
+
+.error{
+  background-color: pink;
+}
