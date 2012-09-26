@@ -1,0 +1,14 @@
+// import normalize
+@import "normalize";
+
+@import "variables";
+// import grids
+@import "grid";
+
+// import mixins
+@import "mixins";
+
+body{
+
+  background-color: #fefefe;
+}

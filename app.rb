@@ -25,6 +25,7 @@ DataMapper.finalize.auto_upgrade!
 ####################################################
 
 get '/' do
+   @person = Person.new
    @title = 'Welcome'
    erb :home  
 end
